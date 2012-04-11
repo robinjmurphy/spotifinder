@@ -2,7 +2,7 @@ function bindResults() {
 	$("#results ul li").unbind();
 	$("#results ul li").bind('click', function(){
 		$('span.uri').hide();
-		$('iframe').hide();
+		$('iframe').remove();
 		$("#results ul li").removeClass('active');
 		$('span.uri', this).show();
 		$(this).addClass('active');
