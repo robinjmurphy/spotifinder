@@ -6,6 +6,8 @@ function get_API_data($artist, $title) {
 }
 
 function format_secs($seconds) {
-	$formatted_string = floor($seconds/60) . ":" . $seconds % 60;
-	return $formatted_string;
+	$mins = floor($seconds/60);
+	$secs = $seconds % 60;
+
+	return sprintf('%d:%02d', $mins, $secs);
 }
