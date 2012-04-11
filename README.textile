@@ -1,3 +1,3 @@
 h2. What is this project?
 
-It's a simple program to extract Spotify URIs based on artist/title data.
+It's a simple program to extract Spotify URIs based on artist/title data. This is just an experiment with the Spotify Web API.
