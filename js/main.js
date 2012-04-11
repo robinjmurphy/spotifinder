@@ -14,10 +14,12 @@ function bindResults() {
 function bindForm() {
 	$("form").bind('submit', function(data){
 		$("form").unbind();
+		$("form").addClass('busy');
 		$.post('_results.php', $(this).serialize(), function(data){
 			$("#results").html(data);
 			bindResults();
 			bindForm();
+			$("form").removeClass('busy');
 		});
 		return false;
 	});	

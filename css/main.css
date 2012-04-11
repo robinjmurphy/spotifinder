@@ -46,6 +46,10 @@ form {
 	margin: 0 -10px;
 }
 
+form.busy {
+	background: #70B900 url('../img/busy.gif') 560px center no-repeat;
+}
+
 input {
 	font-size: 16px;
 	padding: 3px;
